@@ -43,7 +43,7 @@ const addNewNote = (text = '') => {
    editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden');
     textArea.classList.toggle('hidden');
-
+    updateLSData();
    })
     textArea.addEventListener('change', (event) =>{
          const value = event.target.value;
