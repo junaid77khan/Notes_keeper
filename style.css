@@ -6,16 +6,18 @@ body, html{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #e2e2e9;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,219,114,1) 99%);
 }
 
 .nav{
-    background-color: #F7BC07;
+    background: #ffd94e;
     padding: 1rem;
     position: sticky;
     top: 0;
     left: 0;
-    color: white;
+    color: black;
+    filter: drop-shadow(0 3px 20px #FFAE00);
 }
 
 .nav h1{
@@ -25,13 +27,13 @@ body, html{
 
 .btn-content{
     border: none;
-    background-color: #FFFFFF;
-    padding: .5rem 1rem;
+    padding: .7rem 1rem;
     border-radius: 6rem;
     background-color: #F7BC07;
     transition: .4s all;
     color: white;
     font-weight: bold;
+    filter: drop-shadow(0 3px 20px #F7BC07);
 }
 
 .btn-content:hover{
@@ -56,6 +58,7 @@ body, html{
     overflow-y: scroll;
     box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.1), inset 0, -1px 0 rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
+    filter: drop-shadow(0 2px 20px #ebba27);
 }
 
 .textArea{
@@ -88,7 +91,7 @@ body, html{
 }
 
 .edit{
-    background-color: #F7BC07;
+    background-color: rgba(39,255,0,1);
     color: white;
 }
 
@@ -98,7 +101,7 @@ body, html{
 }
 
 .edit:hover{
-    color: #F7BC07;
+    color: rgba(39,255,0,1);
     background-color: white;
     transform: scale(1.05);
     cursor: pointer;
