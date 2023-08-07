@@ -1,0 +1,118 @@
+body, html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #e2e2e9;
+}
+
+.nav{
+    background-color: #F7BC07;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.nav h1{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-content{
+    border: none;
+    background-color: #FFFFFF;
+    padding: .5rem 1rem;
+    border-radius: 6rem;
+    background-color: #F7BC07;
+    transition: .4s all;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-content:hover{
+    transform: scale(1.04);
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.note{
+    display: inline-block;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    padding: .4rem;
+    height: 150px;
+    width: 300px;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 0 rgb(0, 0, 0, 0.1), inset 0, -1px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.textArea{
+    height: 100%;
+    width: 97%;
+    border: none;
+    padding: .3rem;
+    margin-top: .4rem;
+}
+
+.textArea:focus{
+    outline: none;
+}
+
+.operation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+}
+
+
+.edit, .delete{
+    padding: .4rem;
+    border-radius: 50%;
+    transition: .2s all;
+    font-size: .7rem;
+}
+
+.edit{
+    background-color: #F7BC07;
+    color: white;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
+
+.edit:hover{
+    color: #F7BC07;
+    background-color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: drop-shadow(0 10px 8px rgb(219, 218, 218));
+}
+
+.delete:hover{
+    color: red;
+    background-color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: drop-shadow(0 10px 8px rgb(219, 218, 218));
+}
+
+.hidden{
+    display: none;
+}
