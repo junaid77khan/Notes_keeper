@@ -6,6 +6,7 @@ body, html{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(248,219,114,1) 99%);
 }
@@ -26,27 +27,54 @@ body, html{
     padding: 0;
 }
 
-.btn-content{
-    border: none;
-    padding: .7rem 1rem;
-    border-radius: 6rem;
-    background-color: #F7BC07;
-    transition: .4s all;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-content:hover{
-    transform: scale(1.04);
-    filter: drop-shadow(0 3px 20px #F7BC07);
-}
-
 .btn{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin-right: 2rem;
-    margin-top: 1rem;
+    justify-content: flex-end;
+}
+
+button{
+    border: none;
+    bottom: 0;
+    width: 7rem;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+    border-radius: 6rem;
+    transition: .4s all;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 15px 0px;
+    margin: 20px 10px;
+    text-transform: uppercase;
+    z-index: 1;
+    filter: drop-shadow(0 8px 100px #F7BC07);
+}
+
+.span1{
+    background-color: #F7BC07;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .3s all;
+}
+
+.span2{
+    color: black;
+    margin-left: .5rem;
+}
+
+.arrow{
+    color: black;
+}
+
+button:hover .span1{
+    width: 100%;
 }
 
 .note{
