@@ -150,3 +150,9 @@ button:hover .span1{
 .hidden{
     display: none;
 }
+
+@media (max-width:500px) {
+    .span1{
+        width: 100%;
+    }
+}
